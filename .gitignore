@@ -1,0 +1,6 @@
+*.asv
+~$*
+export/
+*.DS_Store
+*._*
+.idea
