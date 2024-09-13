@@ -34,4 +34,5 @@ Several examples are available in src/EXAMPLES to test out parameters of the mod
 ![Example output](/src/EXAMPLES/example.jpg "Example output")
 
 ## References
-This work is currently in submission to be published as an academic manuscript (to be updated).
+This work was published in the Journal of Royal Society Interface. We humbly ask that you cite the following if you use our work:
+[1] Fu D, Reif J. A Biomimetic Branching Signal-Passing Tile-Assembly Model with Dynamic Growth and Disassembly. Journal of Royal Society Interface. 2024 Aug 21;21(217):20230755. [DOI: 10.1098/rsif.2023.0755](https://doi.org/10.1098/rsif.2023.0755)
