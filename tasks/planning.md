@@ -1,4 +1,4 @@
-# Conversion Tasks
+# Conversion Plan
 
 ## Phase 1: Project scaffolding
 - [ ] Create Python package structure (`ystam/` with subpackages)

@@ -58,5 +58,5 @@ black ystam/              # format
 
 ## Planning
 
-- `tasks.md` — phased conversion plan with progress tracking
-- `lessons.md` — pitfalls and decisions log
+- `tasks/planning.md` — phased conversion plan with progress tracking
+- `tasks/lessons.md` — pitfalls and decisions log
