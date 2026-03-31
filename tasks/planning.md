@@ -1,33 +1,34 @@
 # Conversion Plan
 
 ## Phase 1: Project scaffolding
-- [ ] Create Python package structure (`ystam/` with subpackages)
-- [ ] Set up pyproject.toml with dependencies (numpy, matplotlib, etc.)
-- [ ] Create test scaffold (pytest)
+- [x] Create Python package structure (`ystam/` with subpackages)
+- [x] Set up pyproject.toml with dependencies (numpy, matplotlib, etc.)
+- [x] Create test scaffold (pytest)
 
 ## Phase 2: Core data structures
-- [ ] Convert `Tile.m` -> `ystam/tile/tile.py`
-- [ ] Convert `TileSet.m` -> `ystam/tile/tileset.py`
-- [ ] Convert `Grid.m` -> `ystam/grid/grid.py`
-- [ ] Convert glue/binding enums and helpers (`enum_glues.m`, `binding_rules.m`, etc.)
+- [x] Convert `Tile.m` -> `ystam/tile/tile.py`
+- [x] Convert `TileSet.m` -> `ystam/tile/tileset.py`
+- [x] Convert `Grid.m` -> `ystam/grid/grid.py`
+- [x] Convert glue/binding enums and helpers (`enum_glues.m`, `binding_rules.m`, etc.)
 
 ## Phase 3: Simulation logic
-- [ ] Convert growth mechanics (`Grow/`)
-- [ ] Convert disassembly mechanics (`Disassemble/`)
-- [ ] Convert feedback propagation (`Feedback/`)
-- [ ] Convert update rules (`UpdateRules/`)
-- [ ] Convert termination logic (`Termination/`)
+- [x] Convert growth mechanics (`Grow/`) -> `ystam/grow/grow.py`
+- [x] Convert disassembly mechanics (`Disassemble/`) -> `ystam/disassemble/disassemble.py`
+- [x] Convert feedback propagation (`Feedback/`) -> `ystam/feedback/feedback.py`
+- [x] Convert update rules (`UpdateRules/`) -> `ystam/update_rules/glue_update.py`
+- [x] Convert termination logic (`Termination/`) -> `ystam/termination/termination.py`
 
-## Phase 4: Visualization & utilities
-- [ ] Convert `Visualize/` to matplotlib
-- [ ] Convert `Helper/` utilities
-- [ ] Convert `Debug/` tools
+## Phase 4: Visualization
+- [x] Line-based hypha renderer (`ystam/viz/renderer.py`)
+- [x] Animation/mp4 export (`ystam/viz/animation.py`)
 
-## Phase 5: Examples & validation
-- [ ] Port example scripts as runnable demos
-- [ ] Validate output parity with MATLAB on key examples
+## Phase 5: Fungal domain layer
+- [x] FungalConfig -> SimConfig mapping (`ystam/fungal/config.py`)
+- [x] FungalColony high-level API (`ystam/fungal/colony.py`)
+- [x] Demo scripts: foraging, maze, physarum (`demos/`)
 
-## Phase 6: Polish
+## Phase 6: Validation & polish
+- [ ] Run demo_foraging.py end-to-end, verify video output
+- [ ] Validate parity with MATLAB on eg_2d_fb_ecm parameters
 - [ ] CLI entry point
-- [ ] Documentation
 - [ ] CI setup
